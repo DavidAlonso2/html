@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: greenyellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    color: black;
+    margin-bottom: 25px;
+    font-size: 32px;
+    text-align: center;
+}
+
+form {
+    background: whitesmoke;
+    padding: 30px 35px;
+    border-radius: 12px;
+    box-shadow: 0 0 18px rgba(0,0,0,0.15);
+    width: 330px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    font-size: 15px;
+    text-align: left;
+    margin-bottom: 6px;
+    color: black;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid whitesmoke;
+    border-radius: 6px;
+    outline: none;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: greenyellow;
+    box-shadow: 0 0 6px rgba(125, 255, 59, 0.5);
+}
+
+button {
+    width: 100%;
+    background-color: greenyellow;
+    border: none;
+    padding: 12px;
+    font-size: 17px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+button:hover {
+    background-color: greenyellow;
+}
+
+p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: black;
+}
+
+a {
+    color: green;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+body {
+    animation: verdesFuertes 9s ease-in-out infinite;
+    background: #a8ff3e;
+}
+@keyframes verdesFuertes {
+    0%   { background-color: #a8ff3e; } 
+    20%  { background-color: #6eff00; } 
+    40%  { background-color: #3bcc00; } 
+    60%  { background-color: #9aff73; } 
+    80%  { background-color: #54ff1a; } 
+    100% { background-color: #a8ff3e; } 
+}
