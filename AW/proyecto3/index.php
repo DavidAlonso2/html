@@ -4,7 +4,7 @@
 <head>
  <meta charset="UTF-8">
  <title>UserManager</title>
- <link rel="stylesheet" href="css/styles.css">
+ <link rel="stylesheet" href="estilos1.css">
 </head>
 <body>
 <div class="container">

@@ -16,7 +16,7 @@ if ($_POST) {
 <head>
  <meta charset="UTF-8">
  <title>Crear Usuario</title>
- <link rel="stylesheet" href="css/styles.css">
+ <link rel="stylesheet" href="estilos1.css">
 </head>
 <body>
 <div class="form-container">

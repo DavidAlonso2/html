@@ -1,7 +1,7 @@
 <?php
 $host = "localhost";
 $dbname = "usermanager";
-$user = "root";
+$user = "david";
 $pass = "vegeta777";
 try {
  $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $user, $pass);
