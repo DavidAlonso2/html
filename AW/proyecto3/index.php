@@ -12,4 +12,4 @@
  <a class="btn" href="list.php">Ir al CRUD</a>
 </div>
 </body>
-</html>
+</html> 
