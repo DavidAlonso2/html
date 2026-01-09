@@ -5,8 +5,9 @@ if ($_POST) {
  $email = $_POST["email"];
  $edad = $_POST["edad"];
  $rol = $_POST["rol"];
- $stmt = $pdo->prepare("INSERT INTO usuarios (nombre,email,edad,rol) VALUES (?,?,?,?)");
- $stmt->execute([$nombre, $email, $edad, $rol]);
+ $password = $_POST["password"];
+ $stmt = $pdo->prepare("INSERT INTO usuarios (nombre,email,edad,rol,password) VALUES (?,?,?,?,?)");
+ $stmt->execute([$nombre, $email, $edad, $rol, $password]);
  header("Location: list.php");
  exit;
 }
@@ -28,6 +29,7 @@ if ($_POST) {
  <select name="rol">
  <option value="user">Usuario</option>
  <option value="admin">Administrador</option>
+ <input type="password" name="password" placeholder="Password" required>
  </select>
  <button class="btn" type="submit">Guardar</button>
  </form>

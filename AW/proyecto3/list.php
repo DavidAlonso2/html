@@ -25,6 +25,7 @@ $usuarios = $stmt->fetchAll(PDO::FETCH_ASSOC);
  <td><?= $u['email'] ?></td>
  <td><?= $u['edad'] ?></td>
  <td><?= $u['rol'] ?></td>
+ <td><?= $u['password'] ?></td>
  <td>
  <a class="btn-edit" href="edit.php?id=<?= $u['id'] ?>">Editar</a>
  <a class="btn-delete" href="delete.php?id=<?= $u['id'] ?>">Eliminar</a>

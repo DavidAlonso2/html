@@ -33,6 +33,7 @@ id=?");
  <select name="rol">
  <option value="user" <?= $usuario['rol']=='user'?'selected':'' ?>>Usuario</option>
  <option value="admin" <?= $usuario['rol']=='admin'?'selected':'' ?>>Administrador</option>
+ <input type="password" name="password" value="<?= $usuario['password'] ?>" required>
  </select>
  <button class="btn" type="submit">Actualizar</button>
  </form>
