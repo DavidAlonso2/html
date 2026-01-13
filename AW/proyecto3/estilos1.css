@@ -114,3 +114,47 @@ select:focus {
     border-color: #95d5b2;
 }
 
+ .dashboard-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #52b788;
+        }
+        .user-info {
+            color: #d8f3dc;
+            font-size: 0.9em;
+        }
+ body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .welcome-box {
+            text-align: center;
+            padding: 40px;
+            background-color: #0b2e23; /* Tu color de fondo de container */
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            max-width: 500px;
+            width: 90%;
+        }
+        .welcome-box h1 {
+            color: #95d5b2;
+            margin-bottom: 10px;
+        }
+        .welcome-box p {
+            color: #d8f3dc;
+            margin-bottom: 30px;
+        }
+        .btn-group {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+        .btn-large {
+            padding: 12px 25px;
+            font-size: 1.1em;
+        }
