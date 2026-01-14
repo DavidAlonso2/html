@@ -1,11 +1,7 @@
 <?php
 session_start();
-if (isset($_SESSION['usuario_id'])) {
-    if ($_SESSION['rol'] == 'admin') {
-        header("Location: dashboard.php");
-    } else {
-        header("Location: bienvenida.php");
-    }
+if (!isset($_SESSION['usuario_id'])) {
+    header("Location: login.php");
     exit;
 }
 ?>
@@ -13,7 +9,7 @@ if (isset($_SESSION['usuario_id'])) {
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>UserManager - Inicio</title>
+    <title>Bienvenida - UserManager</title>
     <style>
         body {
             margin: 0;
@@ -26,7 +22,7 @@ if (isset($_SESSION['usuario_id'])) {
             height: 100vh;
         }
 
-        .welcome-box {
+        .bienvenida-box {
             text-align: center;
             padding: 40px;
             background-color: #0b2e23;
@@ -41,52 +37,39 @@ if (isset($_SESSION['usuario_id'])) {
             color: #95d5b2;
             text-transform: uppercase;
             letter-spacing: 2px;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
             font-size: 24px;
         }
 
         p {
             margin-bottom: 30px;
-            color: #d8f3dc;
-        }
-
-        .btn-group {
-            display: flex;
-            gap: 15px;
-            justify-content: center;
+            font-size: 1.1em;
         }
 
         .btn {
             display: inline-block;
             padding: 12px 20px;
-            color: #95d5b2;
-            border: 2px solid #52b788;
+            color: #ff6b6b;
+            border: 2px solid #ff6b6b;
             text-decoration: none;
             font-weight: bold;
             transition: 0.3s;
         }
 
         .btn:hover {
-            background-color: #52b788;
+            background-color: #ff6b6b;
             color: #081c15;
-        }
-
-        .btn-registro {
-            border-style: dashed;
-            color: #74c69d;
-            border-color: #74c69d;
         }
     </style>
 </head>
 <body>
 
-    <div class="welcome-box">
-        <h1>USERMANAGER</h1>
-        <p>Sistema de Gestión de Usuarios</p>
+    <div class="bienvenida-box">
+        <h1>¡HOLA, <?php echo htmlspecialchars($_SESSION['nombre']); ?>!</h1>
+        <p>Has iniciado sesión correctamente como usuario estándar.</p>
         
         <div class="btn-group">
-            <a href="login.php" class="btn">Iniciar Sesión</a>
-            <a href="registro.php" class="btn btn-registro">Registrarse</a>
+            <a href="logout.php" class="btn">Cerrar Sesión</a>
         </div>
     </div>
 

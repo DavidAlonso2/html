@@ -12,7 +12,7 @@ if ($_POST) {
  $update = $pdo->prepare("UPDATE usuarios SET nombre=?, email=?, edad=?, rol=? WHERE
 id=?");
  $update->execute([$nombre, $email, $edad, $rol, $id]);
- header("Location: list.php");
+ header("Location: dashboard.php");
  exit;
 }
 ?>
